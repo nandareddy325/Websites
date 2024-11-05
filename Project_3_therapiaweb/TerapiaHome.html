@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terapia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+
+<style>
+    .header{
+        display: block;
+        background-color: black;
+        width: 100%;
+        
+
+    }
+    .header .links a {
+        font-size: 15px;
+        padding-left: 7px;
+        color: white;
+        text-decoration: none;
+        position: relative;
+    }
+    .header .links a::before{
+      content: "";
+      width: 0%;
+      height: 3px;
+      bottom: 0;
+      background-color: #20d9d9;
+      position: absolute;
+      transition: all 1.5s ease;
+
+    }
+    .header .links a:hover::before{
+      width: 100%;
+    }
+    .fa-solid{
+        color:#20d9d9;
+    }
+    .header .social .fa-brands{
+        width: 38px;
+        height: 38px;
+        background-color:white;
+        border-radius: 50%;
+        text-align: center;
+        align-content: center;
+        color: black;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+    }
+    .header .social .fa-brands:hover{
+      color: white;
+      transition: all 0.5s;
+    }
+    .header .social .fa-brands::after{
+      content: "";
+      width: 0px;
+      height: 100%;
+      position: absolute;
+      background-color: #20d9d9;
+      left: 0;
+      top:0;
+      z-index: -1;
+      transition: all 0.5s;
+      border-radius: 50%;
+    }
+    .header .social .fa-brands:hover::after{
+      width: 100%;
+    }
+/* ------------------------------------------------------------   */
+    .navbar .navbar-brand{
+        font-size: 30px;
+        color: #20d9d9;
+    }
+    .navbar .navbar-nav a{
+        color: black;
+        font-size: 15px;
+        position: relative;
+        width: max-content;
+    }
+    .navbar .navbar-nav a::before{
+      content: "";
+      width: 0%;
+      height: 3px;
+      bottom: 0;
+      position: absolute;
+      background-color: #20d9d9;
+      transition: all .6s ease;
+    }
+    .navbar .navbar-nav a:hover::before{
+      width: 100%;
+    }
+    form .btn{
+        font-size: 15px;
+        border: 1px solid #20d9d9;
+        border-radius: 100px;
+        background-color: #20d9d9;
+        color: white;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        transition: all 0.9s ease;
+    }
+    form .btn::before{
+      content:"";
+      width: 0%;
+      height: 100%;
+      position: absolute;
+      background-color:white;
+      left: 0px;
+      top: 0px;
+      z-index: -1;
+      transition: all 0.9s ease;
+      border-radius: 100px;
+    }
+    form .btn:hover::before{
+      width: 100%;
+      
+    }
+
+    /* ----------------------------                                                     ------------------- */
+
+    .c-item{
+      height: 400px;
+    }
+    .c-img{
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(0.6);
+    }
+    .c-item .carousel-caption button{
+      font-size: 15px;
+      padding: 5px 30px 5px 30px;
+      border-radius: 100px;
+      border: none;
+      position: relative;
+      z-index: 1;
+      overflow: hidden;
+      transition: all 1.5s ease;
+    }
+
+    .c-item .carousel-caption button::before{
+      position: absolute;
+      content: "";
+      width: 0;
+      left: 0;
+      top: 0;
+      height: 100%;
+      border-radius: 100px;
+      background-color: #20d9d9;
+      z-index: -1;
+      transition: all 1.5s ease;
+      
+    }
+    .c-item .carousel-caption button:hover{color: white;}
+
+    .c-item .carousel-caption button:hover::before{
+      width: 100%;
+      border-radius: 100px;
+    }
+     .carousel-control-prev{
+      background-color:#20d9d9;
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      border-radius: 50%;
+      top:50%;
+      transform: translateY(-50%);
+      border: 2px solid white;
+      padding: 4px;
+      left: 20px;
+
+    }
+    .carousel-control-next{
+      background-color:#20d9d9;
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      border-radius: 50%;
+      top:50%;
+      transform: translateY(-50%);
+      border: 2px solid white;
+      padding: 4px;
+      right: 20px;
+    }
+    .c-item .carousel-caption h1{
+      font-family: sans-serif;
+      font-size: 50px;
+      font-weight: bold;
+    }
+    
+    .c-item .carousel-caption p{
+      font-family: sans-serif;
+      font-size: 18px;
+      padding-top:5px;
+    }
+    
+/* --------------------------------------------------------------------------   */
+
+    .hero{
+      padding: 50px 0px 50px 0px;
+    }
+    .hero .hr1{
+      width: 40%;
+      height: 3px;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      color: #20d9d9;
+    }
+    .hero .hr2{
+      width: 60%;
+      height: 3px;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      color: #20d9d9;
+    }
+  
+    .hero .hrs{
+      position: relative;
+    }
+    h4{
+      position: absolute;
+      padding: 0px 20px;
+      top:-10px;
+      background-color: white;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 30px;
+      color: #20d9d9;
+      
+    } 
+    .Therapy .card img{
+      width: 100%;
+      
+    }
+    .card-body .btn{
+      background-color:#20d9d9;
+      border-radius: 30px;
+      color: wheat;
+      font-size: 20px;
+    }
+    .card-body .btn:hover{
+      background-color: white;
+      color: #20d9d9;
+    }
+    .card-body p{
+      color: gray;
+      font-size: 20px;
+      transition: all 1.5s ease;
+    }
+    .card-body{
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+      transition: all 1.5s ease;
+    }
+
+    .card-body::before{
+      content: "";
+      background-color:#8eecec;
+      width: 100%;
+      left: 0;
+      top:100%;
+      z-index: -1;
+      position: absolute;
+      transition: all 1.5s ease;
+    }
+    .card-body:hover{
+      color: red;
+    }
+    .card-body p:hover{
+      color: white;
+    }
+    .card-body:hover::before{
+      height:100%;
+      top:0;
+    }
+    .card .card-img-top{
+      overflow: hidden;
+    }
+    
+    .imges,.imgess{
+      overflow: hidden;
+    }
+    
+    .card img{
+      transition: all .9s;
+    }
+    .card-img-top:hover{
+      transform: scale(1.2);
+    }
+/*  ---------------------------------------------------------  */
+    footer{
+      width: 100%;
+      height: 380px;
+      background:radial-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(MessageTherapy1.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+      position: relative;
+    }
+    footer .Terapia{
+      line-height: 30px;
+      font-size: 15px;
+    }
+    footer h1{
+      font-size: 30px;
+    }
+    footer .Terapia p{
+      color: rgb(209, 200, 200);
+      padding-top: 10px;
+    }
+
+    footer .Terapia .socialfooter{
+      display: flex;
+      justify-content: space-around;
+      font-size: 16px;
+    }
+    footer .Terapia .socialfooter a{
+      width: 40px;
+      height: 40px;
+      background-color:#20d9d9;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      border:1px solid #20d9d9;
+      transition: all 1.5s linear;
+    }
+    footer .Terapia .socialfooter a:hover{
+      background-color: black;
+      color: white;
+      border: 1px solid white;
+    }
+    footer .QuickLinks li{
+      list-style: none;
+    }
+    footer .QuickLinks li::before{
+      content: "> ";
+      color: white;
+      padding-right: 10px;
+    }
+    footer .QuickLinks li a{
+      color: white;
+      font-size: 15px;
+      line-height: 28px;
+      transition: all 1.5s;
+    }
+    footer .QuickLinks li a:hover{
+      color: #20d9d9;
+      word-spacing: 3px;
+      letter-spacing: 2px;
+    }
+    footer .TerapiaServices  li{
+      list-style: none;
+    }
+    footer .TerapiaServices  li::before{
+      content: "> ";
+      color: white;
+      padding-right: 10px;
+    }
+    footer .TerapiaServices  li a{
+      color: white;
+      font-size: 15px;
+      line-height: 28px;
+    }
+    footer .TerapiaServices  li a:hover{
+      color: #20d9d9;
+      word-spacing: 3px;
+      letter-spacing: 2px;
+      transition: all 1.5s;
+    }
+    footer .ContactInfo  li{
+      list-style: none;
+    }
+    footer .ContactInfo  li a{
+      color: white;
+      font-size: 15px;
+      line-height: 28px;
+    }
+    footer .ContactInfo  li a:hover{
+      color: #20d9d9;
+      word-spacing: 3px;
+      letter-spacing: 2px;
+      transition: all 1.5s;
+    }
+
+    .lastfooter{background-color: transparent;position: absolute;bottom: 0;width: 100%;}
+   
+/*  ------------------------------------------------  */
+    
+    .coursal .card-list .user-image{
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+    }
+    .coursal .card-list {
+      color: #fff;
+      padding: 35px;
+      border-radius: 8px;
+      background: rgba(255,255,255,0.2);
+      border: 1px solid rgba(255,255,255,0.5);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      backdrop-filter: blur(30px);
+    }
+    .card-list .card-item .user-profession{
+      font-size: 1.15rem;
+      color: #e3e3e3;
+      font-weight: 500px;
+      margin: 14px 0 40px;
+    }
+    .card-list .card-item .message-button{
+      font-size: 16px;
+      padding: 5px 30px;
+      color: black;
+      background-color: white;
+      border-radius: 6px;
+      cursor: pointer;
+      border: 1px solid transparent;
+      transition: 0.2s ease;
+    }
+    .card-list .card-item .message-button:hover{
+      background: rgba(255,255,255,0.1);
+      border: 1px solid #fff;
+      color: #fff;
+    }
+
+    .removebackpain .imgess img{
+      width: 100%;
+      height: 250px;
+    }
+
+    .imp{
+      padding: 80px 0px 80px 0px;
+      position: relative;
+    }
+    .imp button:hover{
+      color: white;
+      transition: all 1.5s;
+      
+    }
+    .imp button{
+      padding: 8px 50px;
+      border: 1px solid black;
+      background-color: #8eecec;
+      font-weight: 500;
+      border-radius: 100px;
+      position: relative;
+      overflow: hidden;
+      color: black;
+      z-index: 1;
+    }
+    .imp button::before{
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background-color: white;
+      left: 0;
+      top: 0;
+      transition: all 1.5s;
+      z-index: -1;
+      
+    }
+    
+    .imp button:hover::before{
+      width: 0;
+    }
+    .imp .linehr{
+      width: 100%;
+      height: 1px;
+      background-color: black;
+      position: absolute;
+      top: 50%;
+    }
+    
+
+    @media screen and (max-width: 570px) {
+      footer{
+      height: 1080px;
+    }
+    h4{
+      font-size: 20px;
+      padding: 10px;
+    }
+    .c-item{
+      height: 300px;
+    }
+     .carousel-control-prev, .carousel-control-next{
+      width: 50px;
+      height: 50px;
+    }
+    .c-item .carousel-caption h1{
+      font-size: 55px;
+    }
+    .c-item .carousel-caption h5{
+      font-size: 20px;
+      padding-top: 100px;
+    }
+    .c-item .carousel-caption p{
+      font-size: 10px;
+      padding-top: 15px;
+    }
+    
+
+    }
+    @media screen and (min-width:577px) and (max-width:768px) {
+    footer{
+      height: 1080px;
+    }
+    h4{
+      font-size: 20px;
+      padding: 10px;
+    }
+    .c-item{
+      height: 350px;
+    }
+     .carousel-control-prev, .carousel-control-next{
+      width: 60px;
+      height: 60px;
+    }
+    .c-item .carousel-caption h1{
+      font-size: 60;
+    }
+    .c-item .carousel-caption h5{
+      font-size: 30px;
+      padding-top: 50px;
+    }
+    .c-item .carousel-caption p{
+      font-size: 18px;
+      padding-top: 15px;
+    }
+    
+
+    }
+    @media screen and (min-width:769px) and (max-width:992px) {
+      footer{
+      height: 680px;
+    }
+    .c-item{
+      height: 400px;
+    }
+     .carousel-control-prev, .carousel-control-next{
+      width: 50px;
+      height: 50px;
+      
+    }
+    .c-item .carousel-caption h1{
+      font-size: 50px;
+      
+    }
+    .c-item .carousel-caption h5{
+      font-size: 20px;
+      padding-top: 60px;
+    }
+    .c-item .carousel-caption p{
+      font-size: 18px;
+      padding-top: 0px;
+    }
+    .c-item .carousel-caption{
+      padding-top: 0px;
+    }
+    .c-item .carousel-caption button{
+      font-size: 20px;
+      padding: 8px 40px 8px 40px;
+      
+    }
+    }
+
+    @media screen and (min-width:993px) and (max-width:1200px) {
+    .c-item{
+      height: 480px;
+    }
+    .carousel-control-prev, .carousel-control-next{
+      width: 50px;
+      height: 50px;
+      
+    }
+    .c-item .carousel-caption h1{
+      font-size: 60px;
+    }
+    .c-item .carousel-caption h5{
+      font-size: 20px;
+    }
+    .c-item .carousel-caption p{
+      font-size: 15px;
+      padding-top: 5px;
+    }
+
+    .c-item .carousel-caption button{
+      font-size: 15px;
+      
+    }
+    
+
+    }
+
+
+</style>
+<body>
+    <div class="header d-none d-lg-block ">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="links mt-3  ">
+                <a href="#"><i class="fa-solid fa-location-dot"></i> Find A Location </a>
+                <a href="#"><i class="fa-solid fa-phone"></i> +0123456789</a>
+                <a href="#"><i class="fa-solid fa-envelope"></i> Example@gmail.com</a>
+            </div>
+            </div>
+            <div class="col-lg-6">
+            <div class="social text-end mt-2">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -----------------------------------------------Header--------------------------------------------------------- -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <div class="container">
+      <a class="navbar-brand" href="#"><i class="fa-solid fa-star-of-life"></i>Terapia</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#">Services</a>
+          </li>
+          
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Pages
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item " href="#">Appointment</a></li>
+              <li><a class="dropdown-item" href="#">Our Blog</a></li>
+              <li><a class="dropdown-item" href="#">Our Team</a></li>
+              <li><a class="dropdown-item" href="#">Testimonial</a></li>
+              <li><a class="dropdown-item" href="#">404 page</a></li>
+            </ul>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link  " href="#">Contact Us</a>
+          </li>
+        </ul>
+        <form>
+          <button class=" btn px-4" type="submit">Book Appointment</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- -------------------------------------------------------------------------------------------------- -->
+
+<div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active  c-item" >
+      <img src="carousel-1.jpg" class="d-block w-100 c-img" alt="">
+      <div class="carousel-caption top-0 mt-5 d-none d-md-block">
+        <h6>PHYSIOTHERAPY CENTER</h6>
+        <h1>Best Solution For Painful Life</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel asperiores quia repellendus similique, assumenda sunt facilis obcaecati esse?</p>
+          <button class="mt-lg-5 mt-md-3">Book Appointment</button>
+      </div>
+    </div>
+    <div class="carousel-item  c-item">
+      <img src="carousel-2.jpg"  class="d-block w-100 c-img" alt="">
+      <div class="carousel-caption top-0 mt-5  d-none d-md-block">
+        <h6>PHYSIOTHERAPY CENTER</h6>
+        <h1 >Best Solution For Painful Life</h1>
+        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel asperiores quia repellendus similique, assumenda sunt facilis obcaecati esse?</p>
+          <button class="mt-lg-5 mt-md-3">Book Appointment</button>
+      </div>
+    </div>
+    <div class="carousel-item  c-item">
+      <img src="carouse1-4.jpg"  class="d-block w-100 c-img" alt="">
+      <div class="carousel-caption top-0  mt-5 d-none d-md-block">
+        <h6>PHYSIOTHERAPY CENTER</h6>
+        <h1 >Best Solution For Painful Life</h1>
+        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel asperiores quia repellendus similique, assumenda sunt facilis obcaecati esse?</p>
+          <button class="mt-lg-5 mt-md-3">Book Appointment</button>
+      </div>
+    </div>
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+
+</div>
+<!-- -----------------------------------hero----------------------------------------------------- -->
+
+
+<div class="hero">
+  <div class="container">
+    <div class="col-lg-10 mx-auto">
+      <div class="hrs ">
+        <hr class="hr1">
+        <hr class="hr2">
+        <h4 class="text-center">WHAT WE DO</h4>
+      </div>
+      <h2 class="text-center display-5 fw-bold">Our Service Given Physio Therapy By Expert.</h2>
+      <p class="text-center text-white-40 py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat deleniti amet at atque sequi quibusdam cumque itaque repudiandae temporibus, eius nam mollitia voluptas maxime veniam necessitatibus saepe in ab? Repellat!</p>
+    </div>
+
+
+
+    <div class="Therapy ">
+      <div class="row g-4 p-5">
+      <div class="col-xl-3 col-lg-4 col-12 col-sm-12 col-md-6">
+      <div class="card" >
+        <div class="imges">
+        <img src="MessageTherapy1.jpg" alt="" class="card-img-top">
+      </div>
+        <div class="card-body">
+          <h5 class="card-title mt-2 mb-3">Message Therapy</h5>
+          <p class="card-text">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus, dolor qui ullam</p>
+          <div class="text-center">
+            <button class="btn px-4 mt-3">Read More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-3 col-lg-4  col-12 col-sm-12 col-md-6">
+      <div class="card" >
+        <div class="imges">
+        <img src="MessageTherapy1.jpg" alt="" class="card-img-top">
+      </div>
+        <div class="card-body">
+          <h5 class="card-title mt-2 mb-3">Message Therapy</h5>
+          <p class="card-text">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus, dolor qui ullam</p>
+          <div class="text-center">
+            <button class="btn px-4 mt-3">Read More</button>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-3 col-lg-4  col-12 col-sm-12 col-md-6">
+      <div class="card" >
+        <div class="imges">
+        <img src="MessageTherapy1.jpg" alt="" class="card-img-top">
+      </div>
+        <div class="card-body">
+          <h5 class="card-title mt-2 mb-3">Message Therapy</h5>
+          <p class="card-text">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus, dolor qui ullam</p>
+          <button class="btn px-4 mt-3">Read More</button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-xl-3 col-lg-4  col-12 col-sm-12 col-md-6">
+      <div class="card" >
+        <div class="imges">
+        <img src="MessageTherapy1.jpg" alt="" class="card-img-top">
+      </div>
+        <div class="card-body">
+          <h5 class="card-title mt-2 mb-3">Message Therapy</h5>
+          <p class="card-text">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus, dolor qui ullam</p>
+          <div class="text-center">
+            <button class="btn px-4 mt-3">Read More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-xl-3 col-lg-4  col-12 col-sm-12 col-md-6">
+      <div class="card" >
+        <div class="imges">
+        <img src="MessageTherapy1.jpg" alt="" class="card-img-top">
+      </div>
+        <div class="card-body">
+          <h5 class="card-title mt-2 mb-3">Message Therapy</h5>
+          <p class="card-text">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus, dolor qui ullam</p>
+          <div class="text-center">
+            <button class="btn px-4 mt-3">Read More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-xl-3 col-lg-4  col-12 col-sm-12 col-md-6">
+      <div class="card" >
+        <div class="imges">
+        <img src="MessageTherapy1.jpg" alt="" class="card-img-top">
+      </div>
+        <div class="card-body">
+          <h5 class="card-title mt-2 mb-3">Message Therapy</h5>
+          <p class="card-text">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus, dolor qui ullam</p>
+          <div class="text-center">
+            <button class="btn px-4 mt-3">Read More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-xl-3 col-lg-4 col-12 col-sm-12 col-md-6">
+      <div class="card" >
+        <div class="imges">
+        <img src="MessageTherapy1.jpg" alt="" class="card-img-top">
+      </div>
+        <div class="card-body">
+          <h5 class="card-title mt-2 mb-3">Message Therapy</h5>
+          <p class="card-text">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus, dolor qui ullam</p>
+          <div class="text-center">
+            <button class="btn px-4 mt-3">Read More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-xl-3 col-lg-4  col-12 col-sm-12 col-md-6">
+      <div class="card" >
+        <div class="imges">
+        <img src="MessageTherapy1.jpg" alt="" class="card-img-top">
+      </div>
+        <div class="card-body">
+          <h5 class="card-title mt-2 mb-3">Message Therapy</h5>
+          <p class="card-text">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus, dolor qui ullam</p>
+          <div class="text-center">
+            <button class="btn px-4 mt-3">Read More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+
+
+
+  </div>
+</div>
+
+
+  
+    <div class=" mx-auto">
+      <div class="text-center imp">
+      <button>Service More</button>
+      <div class="linehr"></div>
+    </div>
+    
+  </div>
+  
+  </div>
+
+<!-- --------------------------------------------------------------------------------------------- -->
+
+<div class="course1">
+
+
+</div>
+<!-- ---------------------------------------------------- -->
+
+<div class="bg-dark  coursal">
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-lg-4 col-md-6 col-sm-12 col-8 mx-auto ">
+        <div class="slide-wrapper py-5">
+          <div class="card-list">
+            <div class="card-item text-center border p-3">
+              <img class="user-image" src="unnamed.png"  alt="" >
+              <h2 class="user-name">Google Photos</h2>
+              <p class="user-profession">Photos Storage</p>
+              <button class="message-button">Click Me</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12  col-8 mx-auto ">
+        <div class="slide-wrapper py-5">
+          <div class="card-list">
+            <div class="card-item text-center  border p-3">
+              <img class="user-image" src="unnamed.png"  alt="" >
+              <h2 class="user-name">Google Photos</h2>
+              <p class="user-profession">Photos Storage</p>
+              <button class="message-button">Click Me</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12 col-8 mx-auto ">
+        <div class="slide-wrapper py-5">
+          <div class="card-list">
+            <div class="card-item text-center  border p-3">
+              <img class="user-image" src="unnamed.png"  alt="" >
+              <h2 class="user-name">Google Photos</h2>
+              <p class="user-profession">Photos Storage</p>
+              <button class="message-button">Click Me</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+ 
+<!-- -------------------------------------------------------------------------------------------- -->
+
+
+<div class="hero">
+  <div class="container">
+
+    <div class="col-lg-10 mx-auto">
+      <div class="hrs ">
+        <hr class="hr1">
+        <hr class="hr2">
+        <h4 class="text-center">OUR BLOG</h4>
+      </div>
+      <h2 class="text-center display-6 fw-bold">Excellent Facility and High Quality Therapy</h2>
+      <p class="text-center text-white-40 py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat deleniti amet at atque sequi quibusdam cumque itaque repudiandae temporibus, eius nam mollitia voluptas maxime veniam necessitatibus saepe in ab? Repellat!</p>
+    </div>
+
+   <div class="row removebackpain g-4">
+
+    <div class="col-lg-4  col-10 mx-auto  ">
+      <div class="card" >
+        <div class="imgess">
+        <img src="MessageTherapy1.jpg" alt="" class="card-img-top">
+      </div>
+        <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <span> <i class="fa-solid fa-calendar-days"></i>01 Jan 2045</span>
+            <span><i class="fa-solid fa-comments"></i>3 Comments</span>
+          </div>
+          <h5 class="card-title mt-2 mb-3">Remove back Pain While Working on o physio</h5>
+          <p class="card-text">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus, dolor qui ullam</p>
+          <button class="btn px-4 mt-3">Read More</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4  col-10 mx-auto ">
+      <div class="card" >
+        <div class="imgess">
+        <img src="MessageTherapy3.jpg" alt="" class="card-img-top">
+      </div>
+        <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <span> <i class="fa-solid fa-calendar-days"></i>01 Jan 2045</span>
+            <span><i class="fa-solid fa-comments"></i>3 Comments</span>
+          </div>
+          <h5 class="card-title mt-2 mb-3">Remove back Pain While Working on o physio</h5>
+          <p class="card-text">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus, dolor qui ullam</p>
+          <button class="btn px-4 mt-3">Read More</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-10 mx-auto ">
+      <div class="card" >
+        <div class="imgess">
+        <img src="MessageTherapy2.jpg" alt="" class="card-img-top">
+      </div>
+        <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <span> <i class="fa-solid fa-calendar-days"></i>01 Jan 2045</span>
+            <span><i class="fa-solid fa-comments"></i>3 Comments</span>
+          </div>
+          <h5 class="card-title mt-2 mb-3">Remove back Pain While Working on o physio</h5>
+          <p class="card-text">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus, dolor qui ullam</p>
+          <button class="btn px-4 mt-3">Read More</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  </div>
+</div>
+<!-- ---------------------------------------------Footer-------------------------- -->
+ <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-6 Terapia">
+        <h1 class="mt-5 text-white">Terapia</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus dolorem impedit eos autem dolores laudantium quia, qui similique</p>
+        <div class="socialfooter">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+      </div>
+      <div class="col-lg-3  col-md-6  QuickLinks">
+        <h1 class="mt-5 mb-4 text-white">Quick Links</h1>
+        <li><a href="#" class="text-decoration-none">About Us</a></li>
+        <li><a href="#" class="text-decoration-none">Contact Us</a></li>
+        <li><a href="#" class="text-decoration-none">Privacy Policy</a></li>
+        <li><a href="#" class="text-decoration-none">Terms & Conditions</a></li>
+        <li><a href="#" class="text-decoration-none">Our Blog & News</a></li>
+        <li><a href="#" class="text-decoration-none">Our Team</a></li>
+      </div>
+      <div class="col-lg-3  col-md-6  TerapiaServices">
+        <h1 class="mt-5 mb-4 text-white">Terapia Services</h1>
+        <li><a href="#" class="text-decoration-none">All Services</a></li>
+        <li><a href="#" class="text-decoration-none">Physiotherapy</a></li>
+        <li><a href="#" class="text-decoration-none">Diagnostics</a></li>
+        <li><a href="#" class="text-decoration-none">Manual Therapy</a></li>
+        <li><a href="#" class="text-decoration-none">Massage Therapy</a></li>
+        <li><a href="#" class="text-decoration-none">Rehabilitaion</a></li>
+      </div>
+      <div class="col-lg-3  col-md-6  ContactInfo">
+        <h1 class="mt-5 mb-4 text-white">Contact Info</h1>
+        <li> <a href="#" class="text-decoration-none"> <i class="fa-solid fa-location-dot pe-2"></i> 123 Street,New York,USA</li></a>
+        <li> <a href="#" class="text-decoration-none"> <i class="fa-solid fa-envelope pe-2"></i>  Info#examples.com</li></a>
+        <li> <a href="#" class="text-decoration-none"><i class="fa-solid fa-envelope pe-2"></i>  info@examples.com</li></a>
+        <li> <a href="#" class="text-decoration-none"> <i class="fa-solid fa-phone pe-2"></i>  +0123456789</li></a>
+        <li> <a href="#" class="text-decoration-none"> <i class="fa-solid fa-phone pe-2"></i>  +1234567890</li></a>
+        
+      </div>
+    </div>
+  </div>
+  <div class="lastfooter py-4">
+    <div class="container">
+    <div class="text-white">
+      <span class="d-block text-center">&copy;<a href="#">Your Site Name</a>, All right reserved.</span>
+      <span class="d-block text-center">Designed By <a href="#">HTML Codex</a>Distributed By <a href="#">NandaThemes</a></span>
+    </div>
+  </div>
+    
+
+  </div>
+ </footer>
+</body>
+</html>

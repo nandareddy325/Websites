@@ -1,0 +1,236 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.hd{
+    border-bottom: 1px solid lightgrey;
+}
+.quote i{
+    padding: 10px;
+}
+.quote i:hover{
+    color: yellow;
+}
+.quote .btn{
+    background-color: blue;
+}
+.quote .btn:hover{
+    background-color: yellow;
+}
+
+/*<-------------------------hd-------------------------->*/
+.hero{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(3.jpg);
+    width: 100%;
+    height: 550px;
+    background-position: center;
+    background-size: cover;
+
+}
+.section1{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.section2 img{
+    width: 100%;
+    height: 250xp;
+    
+}
+.section2{
+    padding-bottom: 60px;
+}
+.section-black{
+    width: 60%;
+    height: 1000px;
+    background-color: black;
+}
+.black{
+    width: 140%;
+    height: 700px;
+    position: relative;
+    left: 100px;
+    top:140px;
+}
+iframe{
+    width: 100%;
+    height: 500px;
+}
+
+.gallery1 img{
+    height: 250px;
+}
+
+.causes{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.donatenow{
+    height: 650px;
+    border: 1px solid rgb(244, 241, 241);
+    border-radius: 20px;
+    transition: all .3s linear;
+}
+.donatenow img{
+    height: 250px;
+    border-radius: 20px;
+}
+.donatenow:hover{
+    box-shadow: 0px 0px 20px black;
+}
+.donatenow button{
+    background-color:gold;
+}
+.donatenow button:hover{
+    background-color: black;
+}
+
+
+.innerimage{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(3.jpg);
+    width: 100%;
+    height: 500px;
+    color: white;
+    background-attachment: fixed;
+}
+
+.innerimage h1{
+    font-size: 50px;
+}
+
+.letest{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.learnmore{
+    padding-top: 20px;
+    padding-bottom: 120px;
+}
+.learnmore img{
+    width: 100%;
+    height: 230px;
+
+}
+.learnmore h3:hover{
+    color: yellowgreen;
+    cursor: pointer;
+}
+.learnmore .btn{
+    background-color: yellow;
+}
+.learnmore .btn:hover{
+    background-color: black;
+    color: white;
+}
+
+
+.form .imgs{
+    width: 100%;
+    height: 350px;
+    padding-top: 100px;
+}
+.form .Volunteer{
+    width: 100%;
+    height: 900px;
+    background-color:blueviolet; 
+
+}
+.form .client{
+    width: 33%;
+    height: 30px;
+}
+.form .Volunteer input{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+}
+.form .Volunteer textarea{
+    width: 100%;
+    height: 230px;
+}
+.form .Volunteer .btn{
+    background-color: yellow;
+}
+.form .Volunteer .btn:hover{
+    background-color:blueviolet ;
+}
+.innervolunteer{
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+.lastsection{
+    padding-top: 100px;
+    background-color: black;
+    color: white;
+}
+.border-top{
+    width:88%;
+}
+
+/*<-------------------------hero-------------------------->*/
+@media screen and (max-width:530px) {
+    .hero{
+        height: 380px;
+        
+    }
+    .hero h1{
+        font-size: 36px;
+        
+    }
+    .section1{
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .section2 img{
+        padding-bottom: 30px;
+        
+    }
+    .section2{
+        padding-bottom: 100px;
+    }
+    .section-black{
+        width: 100%;
+    }
+    .black{
+        width: 100%;
+        left: 0px;
+        top:100px;
+    }
+    iframe{
+        width: 100%;
+        height: 300px;
+    }
+    .gallery1 img{
+        width: 100%;
+        height: 250px;
+    }
+
+    
+    
+
+
+
+        /*<-------------------------hero-------------------------->*/
+
+}
+@media screen and (min-width:531px) and (max-width:950px) {
+    .hero{
+        height: 460px;
+        
+    }
+    .hero h1{
+        font-size: 40px;
+        
+    }
+    .section1{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .gallery1 img{
+        width: 100%;
+        height: 320px;
+    }
+}
+
+

@@ -1,0 +1,64 @@
+.smart{
+    text-align: center;
+}
+.quote{
+    text-align: center;
+}
+.quote i{
+    padding: 10px;
+}
+.quote .btn{
+    background: rgb(255, 165, 0) ;
+}
+.quote .btn:hover{
+    background: rgb(106, 90, 205) ;
+    color:white
+}
+
+.quote i:hover{
+    color: rgb(255, 165, 0);
+    
+}
+.smartquote{
+    border-bottom: 1px solid gray;
+}
+.About{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(3.jpg);
+    width: 100%;
+    height: 350px;
+    background-position: center;
+    background-size: cover;    
+}
+.About h1{
+    font-size: 50px;
+}
+.section{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.section .fundation{
+    border: 1px solid gray;
+}
+.section img{
+    width: 100%;
+}
+.innerphoto{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(3.jpg);
+    width: 100%;
+    height: 550px;
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+.innerphoto h1{
+    font-size: 50px;
+}
+.innerphoto .btn:hover{
+    background-color: blueviolet;
+}
+
+.lastsection{
+    padding-top: 100px;
+    background-color: black;
+    color: white;
+}

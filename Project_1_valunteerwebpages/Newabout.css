@@ -1,0 +1,180 @@
+.smart{
+    text-align: center;
+}
+.quote{
+    text-align: center;
+}
+.quote i{
+    padding: 10px;
+}
+.quote .btn{
+    background: rgb(255, 165, 0) ;
+}
+.quote .btn:hover{
+    background: rgb(106, 90, 205) ;
+    color:white
+}
+
+.quote i:hover{
+    color: rgb(255, 165, 0);
+    
+}
+.smartquote{
+    border-bottom: 1px solid gray;
+}
+.About{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(3.jpg);
+    width: 100%;
+    height: 350px;
+    background-position: center;
+    background-size: cover;    
+}
+.About h1{
+    font-size: 50px;
+}
+.Welcome img{
+    width: 100%;
+}
+.parters p{
+    width: 60%;
+}
+.history{
+    background-image: url(image-5.jpg);
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.positions{
+    position: relative;
+    top: -120px;
+}
+
+
+.links{
+    width: 250px;
+    height: 250px;
+    background-image:url("i1.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+.links i{
+    font-size: 30px;
+    padding: 10px;
+    display: none;
+    border-radius: 50%;
+    background-color: red;
+ 
+}
+
+.links:hover i{
+    display: inline-block;
+    transition: 2s;
+    animation-name: n;
+    animation-duration: 0.6s;    	
+}
+@keyframes n{
+    0%{ transform:translateY(0); }
+    100%{ transform:translateY(10px); }
+}
+.links:hover{
+    opacity: 0.6;
+}
+.charite{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.charite .Welcome h1{
+    font-size: 30px;
+}
+
+.gallery{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.gallery1 img{
+    width: 33%;
+    height: 250px;
+}
+.causes{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.donatenow img{
+    width: 100%;
+    border-radius: 20px;
+}
+.donatenow{
+    width: 100%;
+    height: 700px;
+    border: 1px solid rgb(244, 241, 241);
+    border-radius: 20px;
+}
+.donatenow:hover{
+    box-shadow: 0px 0px 10px gray
+}
+.donatenow button:hover{
+    background-color: red;
+}
+.innerimage{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(3.jpg);
+    width: 100%;
+    height: 500px;
+    color: white;
+    background-attachment: fixed;
+}
+.innerimage h1{
+    font-size: 50px;
+}
+
+.letest{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.hoversection{
+    padding-bottom: 100px;
+}
+.lastsection{
+    padding-top: 100px;
+    background-color: black;
+    color: white;
+}
+
+
+
+@media screen and (max-width:530px){
+    .About{
+        height: 250px;
+    }
+    .About h1{
+        font-size: 40px;
+    }
+    .history{
+        height: 300px;
+    }
+    .positions{
+        position: relative;
+        top: -200px;
+        padding-top: 20px;
+        
+    }
+    .charite .Welcome2 h1{
+        padding-top: 20px;
+    }
+    
+    
+
+}
+
+
+@media screen and (min-width:531px) and (max-width:950px){
+    .About{
+        height: 350px;
+    }
+    .About h1{
+        font-size: 40px;
+    }
+}

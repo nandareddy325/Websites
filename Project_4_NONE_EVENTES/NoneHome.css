@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    width: 100%;
+    height: 700px;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.8)),url(Evenhome.jpg);
+    background-position: center;
+    background-size: cover;
+    
+}
+.logo h1{
+    color: white;
+    font-size: 35px;
+}
+.logo span{
+    color: orangered;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 50px;
+    
+}
+ul li {
+    display: inline-block;
+    padding-left: 40px;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+}
+ul li a:hover{
+    color: white;
+}
+h1{
+    font-size: 55px;
+
+}
+.hero{
+    width: 100%;
+    height: 500px;
+}
+.btn-A{
+    width: 100px;
+    height: 40px;
+    background-color: beige;
+}
+
+.btn-B{
+    width: 100px;
+    height: 40px;
+    background: linear-gradient(SpringGreen,MediumTurquoise);
+}
+.btn-A:hover{
+    background: linear-gradient(SpringGreen,MediumTurquoise);
+}
+.secondhead span{
+    color: gray;
+}
+.secondhead h2{
+    color: black;
+}
+.p1{
+    width: 100%;
+    height: 250px;
+}
+.nextevents{
+    background-image: url(corp.jpg);
+    width: 100%;
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    border-radius: 20px;
+    
+}
+.nextevents .welcom{
+    display: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.nextevents:hover .welcom{
+    display: block;
+    background-color: rgba(0, 0, 0, 0.6);
+    
+}
+.footphoto{
+    width: 100%;
+    height: 550px;
+    background:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0,0,0,0.5)),url( "Evenfoot.jpeg");
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.footphoto h1{
+font-size: 100px;
+font-weight: 600;
+}
+.footphoto span{
+    color: orangered;
+}
+.footphoto small a{
+    text-decoration: none;
+}
+.footphoto small a:hover{
+    text-decoration: underline;	
+}
+.footphoto p{
+    font-weight: 600;
+    cursor: pointer;
+}
+.footer-social i{
+    padding: 15px;
+    font-size: 25px;
+}
+.footer-social{
+    cursor: pointer;
+}
+
+
+@media screen  and (max-width:530px){
+    .header{
+        height: 300px;
+    }
+    .logo h1{
+        font-size: 18px;
+    }
+    nav{
+        padding-left: 4%;
+        padding-right: 4%;
+        padding-top: 10px;
+        
+    }
+    ul li {
+        padding-left: 20px;
+        
+    }
+    ul li a{
+        font-size:13px ;
+        
+    }
+    h1{
+        font-size: 20px;
+    
+    }
+    
+.btn-A{
+    font-size: 13px;
+    
+}
+.btn-B{
+    font-size: 13px;
+}
+.hero{
+    height: 230px;
+}
+
+.footphoto{
+    height: 300px;
+}
+
+.footphoto h1{
+font-size: 60px;
+font-weight: 600;
+}
+
+.footphoto p{
+    font-weight: 400;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 0px;
+}
+.footphoto small{
+    font-size: 12px;
+    line-height: 0px;
+}
+.footer-social i{
+    padding: 10px;
+    font-size: 17px;
+    line-height: 0px;
+}
+
+    
+    
+}
+@media screen  and (min-width:531px) and (max-width:950px){
+    .header{
+        height: 450px;
+    }
+    .logo h1{
+        font-size: 27px;
+    }
+    nav{
+        padding-left: 6%;
+        padding-right: 6%;
+        padding-top: 20px;
+    }
+    ul li {
+        padding-left: 30px;
+    }
+    h1{
+        font-size: 35px;
+    }
+    .btn-A{
+    font-size: 17px;
+   }
+   .btn-B{
+    font-size: 17px;
+}
+.footphoto{
+    height: 400px;
+}
+.footphoto h1{
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.footphoto p{
+    font-weight: 400;
+    cursor: pointer;
+}
+.footer-social i{
+    padding: 10px;
+    font-size: 20px;
+}
+.hero{
+    height: 340px;
+}
+
+}

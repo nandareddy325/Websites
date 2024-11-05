@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<title>HTML</title>
+	<style type="text/css">
+	*{ 
+		margin: 0px; 
+	}
+		
+	h1::first-letter{
+		font-size: 45px;
+		color: red;
+		}
+		.headerlogo{
+			width: 80%;
+			height: 80%;
+			text-align: center;
+			align-content: center;
+		}
+		.headerlogo .span{
+			position: relative;
+			left: 20px;
+		}
+		.main{
+			width: 100%;
+			height: auto;
+		}
+		.nav{
+			width: 100%;
+			height: 125px;
+		}
+		.nav .logo{
+			width: 30%;
+			height: 100%;
+			float: left;
+		}
+		.nav .navlink{
+			width: 57%;
+			height: 100%;
+			float: right;
+		}
+		.nav .navlink ul{
+			list-style: none;
+			background: red;
+			border-radius: 10px;
+			position: relative;
+			top: 30px;
+			right: 20px;	
+		}
+		.nav .navlink li{
+			display: inline-block;
+			padding: 15px;
+		}
+		.nav .navlink ul a{
+			text-decoration: none;
+			color: white;
+		}
+		.nav .navlink ul a:hover{
+			color: rgb(200, 200, 200, 0.9);
+		}
+		.par{
+			width: 70%;
+			padding: 40px 0;
+			margin: auto;
+			font-style: italic;
+			text-align: center;
+
+		}	
+
+		.Big{
+			width: 950px;
+			height: 450px;
+			position: relative;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	   .bla h1{
+			
+			animation:  3s;
+			animation-duration: 20s;
+			animation-iteration-count: infinite;
+	
+			
+		}
+		@keyframes animati{
+			from { left:0%;}
+			to { left:100%;}
+
+		}
+			
+		.contenthoverline{
+			position: relative;
+			padding: 20px 0;
+			margin: 20px 0;
+			position: relative;
+			text-align: center;
+		}
+		.contenthoverline .line{
+			width: 100%;
+			height: 2px;
+			background-color: black;
+			position: absolute;
+			top: 50%;
+			z-index: -1;
+		}
+		.tagname{
+			width: 160px;
+			height: 40px;
+			border-radius: 10px;
+			background-color: red;
+			color: white;
+			border: none;
+			z-index: 2;
+			
+		}
+
+		.name{
+			width: 100%;
+			height: 100px;
+			background: white;
+			position: relative;
+		}
+		.facilis{
+			width: 100%;
+			height: 230px;
+			display: flex;
+			justify-content: space-around;
+		}
+		.facilis .facilis1{
+			width: 31%;
+			height: 80%;
+		}
+		.facilis .facilis1 .box{
+			width: 30px;
+			height: 30px;
+			background: black;
+			float: left;
+			margin-right: 20px;
+		}
+		.facilis .facilis1 .parag{
+			position: relative;
+			display: inline-block;
+			top: 10px;
+		}
+		 .read{
+			color: red;
+			text-decoration: none;
+		}
+		.viewp{
+			padding-top: 10px;
+		}
+		
+		.john{
+			width: 100%;
+			height: 400px;
+			display: flex;
+			justify-content: space-around;
+		}
+		.john.img{
+			width: 200px;
+			height: 400px;
+		}
+		.john .pht{
+			background: rgb(200, 200, 200, 1.0);
+			width:200px;
+			height:200px;
+		}
+		.pht1{
+			width:200px;
+			height:200px;
+			border-radius: 50%;
+			animation: names 8s;
+			animation-iteration-count: infinite;
+			animation-timing-function: linear;
+		}
+
+		@keyframes names{
+			from { transform: rotate(0deg); }
+			to {transform: rotate(360deg);}
+			
+	}
+		.na{
+			width: 200px;
+			height: 150px;
+		}
+		.na .Nam{
+			padding-top: 7px;
+			padding-bottom: 7px;
+
+		}
+		
+		footer{
+			background: rgb(200, 200, 200, 1.0);
+			width: 100%;
+		}
+		.foot .cls{
+			display: flex;
+			justify-content: space-around;
+		}
+		
+		.lcin{
+			display: flex;
+		}
+		
+		
+		.foot1{
+			width: 50%;
+			
+		}
+		.boxs{
+		    width: 90%;
+			height: 120px;
+			display: flex;
+		}
+		.boxp{
+			width: 95px;
+			height: 95px;
+			background: black;
+			border: 2px solid white;
+			outline: 1px solid black;
+		}
+	    .pp{
+			position: relative;
+			width: 60%;
+			height: 90px;
+			text-align: left;
+			left: 20px;
+			top:-10px;
+		}
+		.pp::first-line{
+			font-size: 20px;
+			color: red;
+			line-height: 35px;
+		}
+		.blog{
+			padding: 20px;
+			padding-left: 0px;
+			font-size: 20px;
+		}
+		.foot .foot2{
+			width: 23%;
+			height: 330px;
+		}
+		.foot .foot3{
+			width: 23%;
+			height: 330px;
+			
+		}
+		.contactus{
+			padding: 20px;
+			padding-left: 0px;
+		}
+		.frm{
+			width: 100%;
+			height: 200px;
+			position: relative;
+		}
+		.frm input{
+			border-radius: 5px;
+			width: 80%;
+			height: 25px;
+			outline: none;
+			position: relative;
+			margin-bottom: 20px;
+			border: none;
+		}
+		
+		.textare{
+			width: 77%;
+			height: 90px;
+			border-radius: 5px;
+			outline: none;
+			border: none;
+			padding-top: 10px;
+			padding-left: 10px;
+		}
+
+		.sub{
+			width: 50%;
+			height: 35px;
+			background-color: red;
+			border: none;
+			border-radius: 10px;
+			color: white;
+			cursor: pointer;
+		}
+		.lastfoot{
+			width: 100%;
+			height: 50px;
+			background: rgb(200, 200, 200, 1.0);
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		.linehr{
+			width: 97%;
+			position: relative;
+			left: 50%;
+			transform: translate(-50%,0);
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="nav">
+			<div class="logo">
+				<div class="headerlogo">
+					<h1>COMPOSITION</h1>
+					<span>Free PSD Websit Template</span>
+			    </div>
+			</div>
+			<div class="navlink">
+				<ul>
+					<li><a href="#">HOMEPAGE</a></li>
+					<li><a href="#">STYLE DEMO</a></li>
+					<li><a href="#">FULL WIDTH</a></li>
+					<li><a href="#">DROPDOWN</a></li>
+					<li><a href="#">LINK TEXT</a></li>
+				</ul>
+			</div>
+		</div>
+		<hr>
+
+		<p class="par">HyperText Markup Language is the standard markup language for documents designed to be displayed in a web browser. It defines the content and structure of web content. It is often assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript.</p>
+		<div class="bla">
+			<img src="A.avif" class="Big">
+		</div>
+
+		
+		<div class="contenthoverline">
+			<div class="line"></div>
+			<button class="tagname">OUR SERVICES</button>
+		  </div>
+
+	    <div class="facilis">
+	    	<div class="facilis1">
+	    		<div class="box"></div>
+	    		<h3>Indonectetus facilis</h3>
+	    		<p class="parag">HyperText Markup Language is the standard markup language for documents designed to be displayed in a web browser. It defines the content and structure of web content. It is often assisted by technologies such as Cascading Style Sheets <br><a href="#" class="read">Read more &gt&gt</a></p>
+	  
+	    	</div>
+	    	<div class="facilis1">
+	    		<div class="box"></div>
+	    		<h3>Indonectetus facilis</h3>
+	    		<p class="parag">HyperText Markup Language is the standard markup language for documents designed to be displayed in a web browser. It defines the content and structure of web content. It is often assisted by technologies such as Cascading Style Sheets <br><a href="#" class="read">Read more &gt&gt</a></p>
+	    	</div>
+	    	<div class="facilis1">
+	    		<div class="box"></div>
+	    		<h3>Indonectetus facilis</h3>
+	    		<p class="parag">HyperText Markup Language is the standard markup language for documents designed to be displayed in a web browser. It defines the content and structure of web content. It is often assisted by technologies such as Cascading Style Sheets <br><a href="#" class="read">Read more &gt&gt</a></p>
+	    	</div>
+	    </div>
+
+
+
+		<div class="contenthoverline">
+		  <div class="line"></div>
+		  <button class="tagname">OUR PLAYERS</button>
+	    </div>
+		
+
+	    <div class="john">
+	    	<div class="p1">
+	    	<img src="sun.jpg" class="pht" >
+	    	<div class="na">
+	    	<p class="Nam"><strong>Name:</strong> Name</p>
+	    		<p class="parag">HyperText Markup Language is the standard markup language for documents designed  </p>
+	    		<p class="viewp"><a href="#" class="read">View profile &gt&gt</a></p>
+	         </div>
+	        </div>
+	       <div class="p1">
+	    	<img src="natural.jpg" class="pht" >
+	    	<div class="na">
+	    	<p class="Nam"><strong>Name:</strong> Name</p>
+	    		<p class="parag">HyperText Markup Language is the standard markup language for documents designed </p>
+	    		<p class="viewp"><a href="#" class="read">View profile &gt&gt</a></p>
+	    	</div>
+	    </div>
+	    	<div class="p1">
+	    	<img src="three.jpg"  class="pht">
+	    	<div class="na">
+	    	<p class="Nam"><strong>Name:</strong> Name</p>
+	    		<p class="parag">HyperText Markup Language is the standard markup language for documents designed  </p>
+	    		<p class="viewp"><a href="#" class="read">View profile &gt&gt</a></p>
+	    	</div>
+	    </div>
+	    <div class="p1">
+	    	<img src="cat.jpg"class="pht" >
+	    	<div class="na">
+	    	<p class="Nam"><strong>Name:</strong> Name</p>
+	    		<p class="parag">HyperText Markup Language is the standard markup language for documents designed</p>
+	    		<p class="viewp"><a href="#" class="read">View profile &gt&gt</a></p>
+	    	</div>
+	    </div>
+	    <div class="p1">
+		    	<img src="map.jpg" class="pht1">
+		    	<div class="na">
+		    	<p class="Nam"><strong>Name:</strong> Name</p>
+		    		<p class="parag">HyperText Markup Language is the standard markup language for documents designed </p>
+	    		<p class="viewp"><a href="#" class="read">View profile &gt&gt</a></p>
+		    	</div>
+	    </div>
+	   </div>
+		<div class="contenthoverline">
+			<div class="line"></div>
+			<button class="tagname">OUR WORKS</button>
+		  </div>
+	    <div class="container">
+	    	<div class="row " >
+	    	
+	          <img src="A.avif" class="col-lg-4"  width="304" height="236" > 
+	          <img src="cute.jpg"class="col-lg-4" width="304" height="236">
+	          <img src="F.jpg"  class="col-lg-4" width="304" height="236">
+	         
+         </div>
+         <br>
+        </div>
+      <footer class="foot">
+	    	<div class="cls">
+	    	<div class="foot1">
+	    		<h4 class="contactus">Letest from the blog</h4>
+	    		<div class="boxs">
+		          <div class="boxp"> <img src="man.avif" style="width:95px; height: 95px;">
+		          </div>
+		           <p class="pp">Metuervestas mus lacinia<br>HyperText Markup Language is the standard markup language for documents designed HyperText Markup Language is the standard markup language for documents designed</p>
+		       </div>
+	         <div class="boxs">
+	       <div class="boxp"><img src="simon.jpg" style="width:95px; height: 95px;"></div>
+	    <p class="pp">Metuervestas mus lacinia<br>HyperText Markup Language is the standard markup language for documents designed HyperText Markup Language is the standard markup language for documents designed</p>
+	    </div>
+	    	</div>
+	    	<div class="foot2">
+	    		<h4 class="contactus">Company Details</h4>
+	    		<p>Company Name <br> Street Name & Number <br> Town <br>Postcode/ZIP</p> <br>
+
+	    		<span>Tel:XXXXXXXXXXXXX</span><br>
+	    		<span>Fex:XXXXXXXXXXXXX</span><br>
+	    		<span>Email: webtech@gmail.com</span>
+	    		<br>
+	    		<h4>Office Hours</h4>
+	    		<p>Monday-Friday:08:00-17:30</p>
+	    		<p>Saturday:08:00-13:00</p>
+
+	    	</div>
+	    	<div class="foot3">
+	    		<h4 class="contactus">Contact Us</h4>
+	    		<form class="frm">
+	    			<input type="text" name="" placeholder="Name">
+	    			<input type="password" name="" placeholder="password">
+	    			<textarea class="textare" placeholder="Massage...."></textarea>
+	    			<button class="sub">SUBMIT</button>
+	    		</form>
+	    	</div>
+	    </div>
+
+	    <hr class="linehr">
+	    <div class="lastfoot">
+	    	<p style="padding-left: 20px;">Copyright<Sup>&copy</Sup>2013 All Right Reserved - DomainName</p>
+	    	<p style="padding-right: 20px;">Templete by OS Templete</p>
+	    </div>
+	    </footer>
+	</div>
+</body>
+</html>

@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    width: 100%;
+    height: 500px;
+    background-image: 
+    linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.8)),url(Evenhome.jpg);
+    background-position: center;
+    background-size: cover;
+    
+}
+.logo h1{
+    color: white;
+    font-size: 35px;
+}
+.logo span{
+    color: orangered;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 50px;
+    
+}
+ul li {
+    display: inline-block;
+    padding-left: 40px;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+}
+ul li a:hover{
+    color: white;
+}
+h1{
+    font-size: 55px;
+
+}
+.secondhead span{
+    color: gray;
+}
+.secondhead h2{
+    color: black;
+}
+.hero{
+    height: 500px;
+    padding-left: 6%;
+}
+.footphoto{
+    width: 100%;
+    height: 550px;
+    background:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0,0,0,0.5)),url( "Evenfoot.jpeg");
+/*		background-image: url( "Evenfoot.jpeg");*/
+    background-position: center;
+    background-size: cover;
+}
+
+.footphoto h1{
+font-size: 100px;
+font-weight: 600;
+}
+.footphoto span{
+    color: orangered;
+}
+.footphoto small a{
+    text-decoration: none;
+}
+.footphoto small a:hover{
+    text-decoration: underline;	
+}
+.footphoto p{
+    font-weight: 600;
+    cursor: pointer;
+}
+.footer-social i{
+    padding: 15px;
+    font-size: 25px;
+}
+.footer-social{
+    cursor: pointer;
+}
+.testimonial{
+    width: 99%;
+    height: 400px;
+}
+.face{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(237, 227, 227);
+    border-radius: 50%;
+    outline: 1px solid rgb(39, 9, 9);
+    border: 1ps solid white;
+    display: flex;
+    position: relative;
+    top:50px;
+    left: 40px;
+    
+}
+.aboutuscontentimage img{
+    width: 100%;
+}
+@media screen  and (max-width:576px){
+    .header{
+        height: 250px;
+    }
+    .logo h1{
+        font-size: 18px;
+    }
+    nav{
+        padding-left: 4%;
+        padding-right: 4%;
+        padding-top: 10px;
+        
+    }
+    ul li {
+        padding-left: 20px;
+        
+    }
+    ul li a{
+        font-size:13px ;
+        
+    }
+    h1{
+        font-size: 20px;
+    
+    }
+    .hero{
+        height: 250px;
+        padding: 0;
+    }
+
+.footphoto{
+    height: 300px;
+}
+
+.footphoto h1{
+font-size: 60px;
+font-weight: 600;
+}
+
+.footphoto p{
+    font-weight: 400;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 0px;
+}
+.footphoto small{
+    font-size: 12px;
+    line-height: 0px;
+}
+.footer-social i{
+    padding: 10px;
+    font-size: 17px;
+    line-height: 0px;
+}
+.aboutuscontentimage img{
+    width: 100%;
+    height: 250px;
+}
+.somecontent-1{
+    text-align: center;
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
+.facetext{
+    text-align: center;
+
+}
+    
+    
+}
+@media screen  and (min-width:577px) and (max-width:992px){
+    .header{
+        height: 400px;
+    }
+    .logo h1{
+        font-size: 27px;
+    }
+    nav{
+        padding-left: 6%;
+        padding-right: 6%;
+        padding-top: 20px;
+    }
+    ul li {
+        padding-left: 30px;
+    }
+    h1{
+        font-size: 35px;
+    }
+    .hero{
+        height: 400px;
+    }
+.footphoto{
+    height: 400px;
+}
+.footphoto h1{
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.footphoto p{
+    font-weight: 400;
+    cursor: pointer;
+}
+.footer-social i{
+    padding: 10px;
+    font-size: 20px;
+}
+.aboutuscontentimage img{
+    width: 100%;
+    height: 300px;
+}
+
+.facetext{
+    text-align: center;
+    
+}
+    
+}
